@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/popup.css">
+	<title>NINTH</title>
+<link rel="icon" href="CD.ico" />
+</head>
+<body>
+
+	<div class="popup-container" style="position: absolute;">
+		<div class="img-flex"></div>
+		<a href="indexm.html" style="font-family: '华文彩云'; color: yellow;font-size: 70px;
+			text-align: center;text-decoration: none;position: absolute;top: 90%;left: 44%;">Come in</a>
+	</div>
+
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/fragment.js"></script>
+<script type="text/javascript">
+$(function() {
+	var fragmentConfig = {
+		container : '.img-flex',//显示容器
+		line : 20,//多少行
+		column : 30,//多少列
+		width : screen.availWidth ,//显示容器的宽度
+		
+		animeTime : 9000,//最长动画时间,图片的取值将在 animeTime*0.33 + animeTime*0.66之前取值 
+		//img : 'image/iss048e028394-orig.jpg'//图片路径
+		//img : 'image/1.jpg'//图片路径
+		img : 'Images/IMG_1597.JPG'//图片路径
+		
+	};
+	fragmentImg(fragmentConfig);
+	
+});
+</script>
+
+</body>
+</html>
